@@ -14,21 +14,25 @@ const App = () => {
                 <Layout>
                     <div className="routes">
                         <Switch>
-                            <Route extact path="/">
-                                <Homepage />
-                            </Route>
-                            <Route extact path="/exchanges">
-                                <Exchanges />
-                            </Route>
-                            <Route extact path="/cryptocurrencies">
+                            <Route path="/cryptocurrencies">
                                 <Cryptocurrencies />
                             </Route>
-                            <Route extact path="/crypto/:coinId">
-                                <CryptoDetails />
+                            <Route path="/exchanges">
+                                <Exchanges />
                             </Route>
-                            <Route extact path="/news">
+                            <Route path="/news">
                                 <News />
                             </Route>
+                            <Route path="/crypto/:coinId">
+                                <CryptoDetails />
+                            </Route>
+                            <Route path="/">
+                                <Homepage />
+                            </Route>
+
+
+
+
                         </Switch>
                     </div>
                 </Layout>
