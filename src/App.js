@@ -4,6 +4,11 @@ import { Layout, Typography, Space } from "antd";
 import { Navbar, Exchanges, Homepage, Cryptocurrencies, CryptoDetails, News } from "./components";
 import './App.css';
 
+function year(){
+    return new Date().getFullYear();
+}
+
+
 const App = () => {
     return (
         <div className="app">
@@ -25,8 +30,7 @@ const App = () => {
 
                 <div className="footer">
                     <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>
-                        CRYPBASE <br />
-                        All rights reserved
+                        CRYPBASE © {year()}
                     </Typography.Title>
                     <Space>
                         <Link to="/">Home</Link>
