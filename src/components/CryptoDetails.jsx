@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import HTMLReactParser from "html-react-parser";
 import { useParams } from "react-router-dom";
 import millify from "millify";
@@ -16,7 +16,7 @@ import {
 } from "@ant-design/icons";
 
 import { useGetCryptoDetailsQuery, useGetCryptoHistoryQuery } from "../services/cryptoAPI";
-// import Loader from './Loader';
+import Loader from './Loader';
 import LineChart from './LineChart';
 
 const { Title, Text } = Typography;
@@ -29,7 +29,7 @@ const CryptoDetails = () => {
   const { data, isFetching } = useGetCryptoDetailsQuery({coinId, timePeriod});
   const { data:coinHistory, isFetching:fetch} = useGetCryptoHistoryQuery({coinId, timePeriod});
 
-  if (isFetching || fetch) return "Loading....";
+  if (isFetching || fetch) return <Loader />;
 
   const cryptoDetails = data?.data?.coin;
   // console.log(cryptoDetails?.change);
