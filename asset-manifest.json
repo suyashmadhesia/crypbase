@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/crypbase/static/css/main.d259a044.css",
+    "main.js": "/crypbase/static/js/main.72fd0494.js",
+    "static/media/blockchain.png": "/crypbase/static/media/blockchain.3759e692dd612d3156ab.png",
+    "index.html": "/crypbase/index.html",
+    "main.d259a044.css.map": "/crypbase/static/css/main.d259a044.css.map",
+    "main.72fd0494.js.map": "/crypbase/static/js/main.72fd0494.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d259a044.css",
+    "static/js/main.72fd0494.js"
+  ]
+}
